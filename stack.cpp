@@ -27,7 +27,7 @@ using namespace std;
 
 const T dfs_lib::stack<T>::pop()
 {
-	const T data{*(end(datas) - 1)};
+	const T data{datas.back()};
 	datas.pop_back();
 	return data;
 }

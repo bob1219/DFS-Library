@@ -19,7 +19,7 @@
 #define DFS_LIBRARY_STACK_H
 
 // standard library
-#include <vector>
+#include <deque>
 
 namespace dfs_lib
 {
@@ -27,7 +27,7 @@ namespace dfs_lib
 	class stack
 	{
 	private:
-		std::vector<T> datas;
+		std::deque<T> datas;
 
 	public:
 		stack() = default;
@@ -46,5 +46,3 @@ namespace dfs_lib
 
 	void swap(stack& left, stack& right) { left.swap(right); }
 }
-
-#endif
